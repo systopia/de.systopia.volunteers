@@ -16,7 +16,7 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
         // add contact type
         self::createVolunteerContactType();
 
-        // install remote event stuff
+        // install volunteer stuff
         $customData = new CRM_Volunteers_CustomData(E::LONG_NAME);
         $customData->syncOptionGroup(E::path('resources/option_group_volunteer_qualifications.json'));
         $customData->syncOptionGroup(E::path('resources/option_group_volunteer_skills.json'));
@@ -27,9 +27,6 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
     /**
      * Get the data of the event contact type,
      *  and creates it if it doesn't exist yet
-     *
-     * @return array
-     *   contact type data
      */
     protected static function createVolunteerContactType() {
         $volunteer_types = civicrm_api3('ContactType', 'get', [
@@ -41,7 +38,7 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
         }
         if ($volunteer_types['count'] == 0) {
             // create it
-            $new_location = civicrm_api3('ContactType', 'create', [
+            civicrm_api3('ContactType', 'create', [
                 'name'        => 'Stibi_Volunteer',
                 'label'       => E::ts("Volunteer"),
                 'description' => E::ts("Stibi Volunteers"),
