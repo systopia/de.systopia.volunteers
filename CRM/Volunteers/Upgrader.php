@@ -20,7 +20,7 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
         $customData = new CRM_Volunteers_CustomData(E::LONG_NAME);
         $customData->syncOptionGroup(E::path('resources/option_group_volunteer_qualifications.json'));
         $customData->syncOptionGroup(E::path('resources/option_group_volunteer_skills.json'));
-        //    $customData->syncCustomGroup(E::path('resources/custom_group_remote_registration.json'));
+        $customData->syncCustomGroup(E::path('resources/custom_group_volunteer.json'));
     }
 
 
@@ -46,7 +46,7 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
                 'label'       => E::ts("Volunteer"),
                 'description' => E::ts("Stibi Volunteers"),
                 'image_URL'   => E::url('icons/volunteer_type.png'),
-                'parent_id'   => 3, // 'Organisation'
+                'parent_id'   => 1, // 'Individual'
             ]);
         }
     }
@@ -78,4 +78,19 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
         self::createVolunteerContactType();
         return true;
     }
+
+    /**
+     * Example: add custom data
+     *
+     * @return TRUE on success
+     * @throws Exception
+     */
+    public function upgrade_0003()
+    {
+        $this->ctx->log->info('create contact type');
+        $customData = new CRM_Volunteers_CustomData(E::LONG_NAME);
+        $customData->syncCustomGroup(E::path('resources/custom_group_volunteer.json'));
+        return true;
+    }
+
 }
