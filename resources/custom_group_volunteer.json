@@ -5,7 +5,7 @@
   "title": "Volunteer Information",
   "extends": "Contact",
   "collapse_display": "0",
-  "extends_entity_column_value": ["Stibi_Volunteer"],
+  "extends_entity_column_value": ["Volunteer"],
   "is_active": "1",
   "is_multiple": "0",
   "style": "Inline",
