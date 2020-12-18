@@ -26,3 +26,23 @@ msgstr ""
 #: CRM/Volunteers/Upgrader.php
 msgid "Volunteers"
 msgstr ""
+
+#: resources/option_group_volunteer_qualifications.json
+msgid "Qualifications"
+msgstr ""
+
+#: resources/custom_group_volunteer.json
+msgid "Skills"
+msgstr ""
+
+#: resources/custom_group_volunteer.json
+msgid "Active"
+msgstr ""
+
+#: custom_group_volunteer.json
+msgid "Volunteer Information"
+msgstr ""
+
+
+
+
