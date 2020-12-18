@@ -8,7 +8,7 @@
  */
 class CRM_Volunteers_ExtensionUtil {
   const SHORT_NAME = 'volunteers';
-  const LONG_NAME = 'com.stiftungbildung.volunteers';
+  const LONG_NAME = 'de.systopia.volunteers';
   const CLASS_PREFIX = 'CRM_Volunteers';
 
   /**

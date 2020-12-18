@@ -48,7 +48,7 @@ class CRM_Volunteers_Upgrader_Base {
   public static function instance() {
     if (!self::$instance) {
       self::$instance = new CRM_Volunteers_Upgrader(
-        'com.stiftungbildung.volunteers',
+        'de.systopia.volunteers',
         E::path()
       );
     }

@@ -30,7 +30,7 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
      */
     protected static function createVolunteerContactType() {
         $volunteer_types = civicrm_api3('ContactType', 'get', [
-            'name'         => 'Stibi_Volunteer',
+            'name'         => 'Volunteer',
             'option.limit' => 0
         ]);
         if ($volunteer_types['count'] > 1) {
@@ -39,9 +39,9 @@ class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
         if ($volunteer_types['count'] == 0) {
             // create it
             civicrm_api3('ContactType', 'create', [
-                'name'        => 'Stibi_Volunteer',
+                'name'        => 'Volunteer',
                 'label'       => E::ts("Volunteer"),
-                'description' => E::ts("Stibi Volunteers"),
+                'description' => E::ts("Volunteers"),
                 'image_URL'   => E::url('icons/volunteer_type.png'),
                 'parent_id'   => 1, // 'Individual'
             ]);
