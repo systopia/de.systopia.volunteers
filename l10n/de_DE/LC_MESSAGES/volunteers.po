@@ -4,7 +4,7 @@
 # make sure you license it to CiviCRM LLC under Academic Free License 3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: com.stiftungbildung.volunteers\n"
+"Project-Id-Version: de.systopia.volunteers\n"
 "POT-Creation-Date: 2020-12-15 11:55+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
@@ -29,5 +29,5 @@ msgid "Volunteer"
 msgstr "Freiwilliger"
 
 #: CRM/Volunteers/Upgrader.php
-msgid "Stibi Volunteers"
-msgstr "Stibi Freiwillige"
+msgid "Volunteers"
+msgstr "Freiwillige"
