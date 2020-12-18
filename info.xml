@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<extension key="com.stiftungbildung.volunteers" type="module">
+<extension key="de.systopia.volunteers" type="module">
   <file>volunteers</file>
   <name>Volunteer Management</name>
-  <description>Volunteer management for Stiftungbildung.com</description>
+  <description>Volunteer management</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>SYSTOPIA</author>
     <email>endres@systopia.de</email>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">https://github.com/systopia/com.stiftungbildung.volunteers</url>
-    <url desc="Documentation">https://github.com/systopia/com.stiftungbildung.volunteers</url>
-    <url desc="Support">https://github.com/systopia/com.stiftungbildung.volunteers/issues</url>
+    <url desc="Main Extension Page">https://github.com/systopia/de.systopia.volunteers</url>
+    <url desc="Documentation">https://github.com/systopia/de.systopia.volunteers</url>
+    <url desc="Support">https://github.com/systopia/de.systopia.volunteers/issues</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate></releaseDate>
@@ -20,7 +20,7 @@
   <compatibility>
     <ver>5.0</ver>
   </compatibility>
-  <comments>Volunteer management for Stiftungbildung.com</comments>
+  <comments>Volunteer management</comments>
   <classloader>
     <psr4 prefix="Civi\" path="Civi"/>
   </classloader>

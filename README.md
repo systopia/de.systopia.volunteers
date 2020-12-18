@@ -1,4 +1,4 @@
-# StiftungBildung.com Volunteer Management (com.stiftungbildung.volunteers)
+# Volunteer Management (de.systopia.volunteers)
 
 ## Usage
 
