@@ -3,7 +3,7 @@
   "_translate": ["title"],
   "name": "volunteer_information",
   "title": "Volunteer Information",
-  "extends": "Contact",
+  "extends": "Individual",
   "collapse_display": "0",
   "extends_entity_column_value": ["Volunteer"],
   "is_active": "1",
