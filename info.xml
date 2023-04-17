@@ -18,13 +18,16 @@
   <version>0.1.1-beta1</version>
   <develStage>beta</develStage>
   <compatibility>
-    <ver>5.0</ver>
+    <ver>5.38</ver>
   </compatibility>
   <comments>Volunteer management</comments>
   <classloader>
     <psr4 prefix="Civi\" path="Civi"/>
+    <psr0 prefix="CRM_" path="."/>
   </classloader>
   <civix>
     <namespace>CRM/Volunteers</namespace>
+    <format>23.02.1</format>
   </civix>
+  <upgrader>CRM_Volunteers_Upgrader</upgrader>
 </extension>

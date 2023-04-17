@@ -5,7 +5,7 @@ use CRM_Volunteers_ExtensionUtil as E;
 /**
  * Collection of upgrade steps.
  */
-class CRM_Volunteers_Upgrader extends CRM_Volunteers_Upgrader_Base
+class CRM_Volunteers_Upgrader extends CRM_Extension_Upgrader_Base
 {
 
     /**
